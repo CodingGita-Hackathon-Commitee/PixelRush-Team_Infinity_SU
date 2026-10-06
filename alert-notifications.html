@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alerts & Notifications - InfraTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-text" style="color:var(--text-main);">
+          <div class="logo-icon" style="background:#0f172a; width:28px; height:28px; color:white; display:flex; align-items:center; justify-content:center; border-radius:6px;">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          INFRA<span style="color:var(--primary-blue)">TRACK</span>
+        </div>
+        <div class="subtitle">INFRASTRUCTURE OS</div>
+      </div>
+
+      <div class="sidebar-content">
+        <a href="report-issue.html" class="btn btn-primary" style="display:flex;align-items:center;justify-content:center;gap:0.5rem; border-radius:6px; padding:0.6rem; font-size:0.9rem; margin-bottom:1rem; color: white;">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+          Quick New Report
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="public-board.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+              Public Board
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="report-issue.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+              Report Issue
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="triage-prioritization.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+              Triage & Prioritization
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="resolution-verification.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+              Resolution & Verification
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="maintenance-analytics.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+              Maintenance Analytics
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="alerts-notifications.html" class="nav-link active">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+              Alerts & Notifications
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="settings-profile.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Settings & Profile
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-footer">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+        <div class="sidebar-footer-text">FIELD MESH</div>
+        <div class="sidebar-version">v2.8.4</div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <div class="dashboard-area">
+        <h2 style="font-size:1.75rem; margin-bottom: 1rem;">Alerts & Notifications</h2>
+        <p style="color:var(--text-muted); margin-bottom: 2rem;">Stay updated on critical infrastructure issues.</p>
+        
+        <div style="background: white; border: 1px solid var(--border-color); border-radius: 8px; padding: 2rem; margin-bottom: 2rem; min-height: 400px;">
+          <h4>Notifications Center</h4>
+          <p style="color:var(--text-muted); margin-top:0.5rem;">Select an item from the sidebar to navigate to other pages.</p>
+        </div>
+      </div>
+
+      <!-- Big Footer -->
+      <footer class="big-footer">
+        <div class="big-footer-grid">
+          
+          <div class="footer-col">
+            <div class="footer-logo">
+              <div class="footer-logo-box">F</div>
+              FIXTRACK
+            </div>
+            <div class="footer-subtitle">INFRASTRUCTURE OS</div>
+            <p class="footer-desc">
+              Campus infrastructure telemetry dispatch automation for residential, academic, and lab facilities.
+            </p>
+            <div class="footer-status">
+              Campus Grid Active &bull; <br>
+              Sync Normal
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>CAMPUS MESH STATUS</h4>
+            <table class="footer-table">
+              <tr>
+                <td>Gateway<br>Node</td>
+                <td>SEC-N4 (99.98%<br>SLA)</td>
+              </tr>
+              <tr>
+                <td>Compliance</td>
+                <td>ISO-22301 &amp; NFPA-80</td>
+              </tr>
+              <tr>
+                <td>Encryption</td>
+                <td>256-bit AES Session</td>
+              </tr>
+            </table>
+            <div style="font-weight:500; font-size:0.9rem; color:var(--text-muted); margin-top:1rem; display:flex; align-items:center; gap:0.5rem;">
+              <svg width="16" height="16" fill="none" stroke="var(--primary-blue)" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Automated Failover Enabled
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>QUICK NAVIGATION</h4>
+            <ul class="footer-links">
+              <li><a href="public-board.html"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg> Public Issue Board</a></li>
+              <li><a href="report-issue.html"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg> Report Urgent Issue</a></li>
+              <li><a href="triage-prioritization.html"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg> Triage Console</a></li>
+              <li><a href="#"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg> Campus SLA Guidelines</a></li>
+              <li><a href="#" style="color:var(--danger-red); border-top:1px solid rgba(0,0,0,0.05); padding-top:1rem;"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg> Incident Dispatch: Ext. 4400</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>SYSTEM &amp; DISPATCH META</h4>
+            <table class="footer-table" style="margin-bottom:2rem;">
+              <tr>
+                <td>Active Shift<br>Roster</td>
+                <td><span class="badge" style="background:#e0e7ff; color:#3730a3;">8 Technicians On<br>Duty</span></td>
+              </tr>
+              <tr>
+                <td>Radio<br>Channel</td>
+                <td>CH-04 Facilities<br>Primary</td>
+              </tr>
+              <tr>
+                <td>Engine<br>Release</td>
+                <td style="font-family: monospace; font-size:0.8rem;">v2.8.4-GA (Field<br>Mesh)</td>
+              </tr>
+            </table>
+            <div class="footer-auth-text">
+              Authorized operational personnel only. All access logged and audited.
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="big-footer-bottom">
+          <div>
+            &copy; 2026 FIXTRACK Civic Technologies Inc. Built for Campus Operations &amp;<br>Facility Reliability. All rights reserved.
+          </div>
+          <div class="big-footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Public Audit Log</a>
+            <a href="#">System Status</a>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
