@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Issue - InfraTrack</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="dashboard-layout">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-text" style="color:var(--text-main);">
+          <div class="logo-icon" style="background:#0f172a; width:28px; height:28px; color:white; display:flex; align-items:center; justify-content:center; border-radius:6px;">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          INFRA<span style="color:var(--primary-blue)">TRACK</span>
+        </div>
+        <div class="subtitle">INFRASTRUCTURE OS</div>
+      </div>
+
+      <div class="sidebar-content">
+        <a href="report-issue.html" class="btn btn-primary" style="display:flex;align-items:center;justify-content:center;gap:0.5rem; border-radius:6px; padding:0.6rem; font-size:0.9rem; margin-bottom:1rem; color: white;">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+          Quick New Report
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="public-board.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+              Public Board
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="report-issue.html" class="nav-link active">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+              Report Issue
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="triage-prioritization.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+              Triage & Prioritization
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="resolution-verification.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+              Resolution & Verification
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="maintenance-analytics.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+              Maintenance Analytics
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="alerts-notifications.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+              Alerts & Notifications
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="settings-profile.html" class="nav-link">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Settings & Profile
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-footer">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:20px;height:20px;"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+        <div class="sidebar-footer-text">FIELD MESH</div>
+        <div class="sidebar-version">v2.8.4</div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <div class="dashboard-area">
+        <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem;">
+          <h2 style="font-size:1.75rem; font-weight:700;">Report Infrastructure Issue</h2>
+          <span style="background:#fee2e2; color:#dc2626; padding:0.25rem 0.75rem; border-radius:20px; font-size:0.75rem; font-weight:600;">INCIDENT FORM</span>
+        </div>
+        <p style="color:var(--text-muted); margin-bottom:2rem;">Submit a new infrastructure report. Critical issues are dispatched immediately to the on-duty technician team.</p>
+
+        <div style="display:grid; grid-template-columns:2fr 1fr; gap:1.5rem; align-items:start;">
+          <!-- Main Form -->
+          <div style="background:white; border:1px solid var(--border-color); border-radius:10px; padding:2rem;">
+            <h3 style="font-size:1.1rem; font-weight:600; margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:1px solid var(--border-color);">Issue Details</h3>
+
+            <div class="form-group">
+              <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.5rem;">Issue Title <span style="color:#ef4444;">*</span></label>
+              <input type="text" placeholder="Brief description of the problem (e.g. 'Water leak in lab B-04')" style="width:100%; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; outline:none; font-family:inherit;" />
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="form-group">
+                <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.5rem;">Category <span style="color:#ef4444;">*</span></label>
+                <select style="width:100%; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; outline:none; background:white; font-family:inherit; cursor:pointer;">
+                  <option value="">Select category...</option>
+                  <option>Electrical</option>
+                  <option>Plumbing</option>
+                  <option>HVAC / Ventilation</option>
+                  <option>Structural / Civil</option>
+                  <option>Safety / Security</option>
+                  <option>IT / Network</option>
+                  <option>Elevator / Lift</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.5rem;">Priority Level <span style="color:#ef4444;">*</span></label>
+                <select style="width:100%; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; outline:none; background:white; font-family:inherit; cursor:pointer;">
+                  <option value="">Select priority...</option>
+                  <option>🔴 Critical — Immediate danger / total failure</option>
+                  <option>🟠 High — Major disruption</option>
+                  <option>🟡 Medium — Partial disruption</option>
+                  <option>🟢 Low — Minor / cosmetic issue</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="form-group">
+                <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.5rem;">Building / Block <span style="color:#ef4444;">*</span></label>
+                <select style="width:100%; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; outline:none; background:white; font-family:inherit; cursor:pointer;">
+                  <option value="">Select building...</option>
+                  <option>Main Administration Block</option>
+                  <option>Engineering Block A</option>
+                  <option>Engineering Block B</option>
+                  <option>Science Block</option>
+                  <option>Library</option>
+                  <option>IT Building</option>
+                  <option>Residential Hostel A</option>
+                  <option>Residential Hostel B</option>
+                  <option>Sports Complex</option>
+                  <option>Cafeteria / Canteen</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.5rem;">Room / Floor / Zone</label>
+                <input type="text" placeholder="e.g. Room 204, Floor 3, Lab B-04" style="width:100%; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; outline:none; font-family:inherit;" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.5rem;">Detailed Description <span style="color:#ef4444;">*</span></label>
+              <textarea rows="5" placeholder="Describe the issue in detail. Include what happened, when it started, and any immediate hazards..." style="width:100%; padding:0.75rem 1rem; border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; outline:none; font-family:inherit; resize:vertical; line-height:1.5;"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.5rem;">Attach Evidence (Photos / Documents)</label>
+              <div style="border:2px dashed var(--border-color); border-radius:8px; padding:2rem; text-align:center; background:#f8fafc; cursor:pointer;">
+                <svg width="32" height="32" fill="none" stroke="#9ca3af" stroke-width="1.5" viewBox="0 0 24 24" style="margin:0 auto 0.75rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <p style="font-weight:600; color:var(--text-main); margin-bottom:0.25rem;">Drop files here or click to upload</p>
+                <p style="font-size:0.8rem; color:var(--text-muted);">PNG, JPG, PDF — max 10MB each</p>
+                <input type="file" multiple style="display:none;" />
+              </div>
+            </div>
+
+            <div style="display:flex; gap:1rem; margin-top:1.5rem;">
+              <button type="button" style="flex:1; padding:0.85rem; background:var(--primary-blue); color:white; border:none; border-radius:8px; font-size:0.95rem; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:0.5rem;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                Submit Incident Report
+              </button>
+              <button type="button" style="padding:0.85rem 1.5rem; background:white; color:var(--text-muted); border:1px solid var(--border-color); border-radius:8px; font-size:0.95rem; font-weight:600; cursor:pointer;">Save Draft</button>
+            </div>
+          </div>
+
+          <!-- Side Panel -->
+          <div style="display:flex; flex-direction:column; gap:1rem;">
+            <div style="background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:1.25rem;">
+              <div style="display:flex; align-items:center; gap:0.5rem; font-weight:600; color:#c2410c; margin-bottom:0.75rem;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                Emergency?
+              </div>
+              <p style="font-size:0.85rem; color:#92400e; line-height:1.5;">For life-threatening emergencies, call <strong>Ext. 4400</strong> immediately. Do not rely solely on this form.</p>
+            </div>
+
+            <div style="background:white; border:1px solid var(--border-color); border-radius:10px; padding:1.25rem;">
+              <h4 style="font-size:0.85rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); margin-bottom:1rem;">On-Duty Team</h4>
+              <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+                <div style="width:32px; height:32px; background:#eff6ff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; color:var(--primary-blue); font-size:0.8rem;">MK</div>
+                <div>
+                  <div style="font-weight:600; font-size:0.9rem;">M. Karim — Lead</div>
+                  <div style="font-size:0.8rem; color:var(--text-muted);">Electrical · On Site</div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+                <div style="width:32px; height:32px; background:#f0fdf4; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; color:#16a34a; font-size:0.8rem;">SR</div>
+                <div>
+                  <div style="font-weight:600; font-size:0.9rem;">S. Raza — Tech</div>
+                  <div style="font-size:0.8rem; color:var(--text-muted);">Plumbing · On Site</div>
+                </div>
+              </div>
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <div style="width:32px; height:32px; background:#faf5ff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; color:#7c3aed; font-size:0.8rem;">AH</div>
+                <div>
+                  <div style="font-weight:600; font-size:0.9rem;">A. Hassan — Tech</div>
+                  <div style="font-size:0.8rem; color:var(--text-muted);">HVAC · On Call</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background:white; border:1px solid var(--border-color); border-radius:10px; padding:1.25rem;">
+              <h4 style="font-size:0.85rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); margin-bottom:1rem;">SLA Timelines</h4>
+              <div style="font-size:0.85rem;">
+                <div style="display:flex; justify-content:space-between; padding:0.5rem 0; border-bottom:1px solid var(--border-color);">
+                  <span style="color:var(--text-muted);">Critical</span>
+                  <span style="font-weight:700; color:#ef4444;">≤ 30 min</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; padding:0.5rem 0; border-bottom:1px solid var(--border-color);">
+                  <span style="color:var(--text-muted);">High</span>
+                  <span style="font-weight:700; color:#f97316;">≤ 2 hours</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; padding:0.5rem 0; border-bottom:1px solid var(--border-color);">
+                  <span style="color:var(--text-muted);">Medium</span>
+                  <span style="font-weight:700; color:#eab308;">≤ 24 hours</span>
+                </div>
+                <div style="display:flex; justify-content:space-between; padding:0.5rem 0;">
+                  <span style="color:var(--text-muted);">Low</span>
+                  <span style="font-weight:700; color:#10b981;">≤ 72 hours</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Big Footer -->
+      <footer class="big-footer">
+        <div class="big-footer-grid">
+          
+          <div class="footer-col">
+            <div class="footer-logo">
+              <div class="footer-logo-box">F</div>
+              FIXTRACK
+            </div>
+            <div class="footer-subtitle">INFRASTRUCTURE OS</div>
+            <p class="footer-desc">
+              Campus infrastructure telemetry dispatch automation for residential, academic, and lab facilities.
+            </p>
+            <div class="footer-status">
+              Campus Grid Active &bull; <br>
+              Sync Normal
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>CAMPUS MESH STATUS</h4>
+            <table class="footer-table">
+              <tr>
+                <td>Gateway<br>Node</td>
+                <td>SEC-N4 (99.98%<br>SLA)</td>
+              </tr>
+              <tr>
+                <td>Compliance</td>
+                <td>ISO-22301 &amp; NFPA-80</td>
+              </tr>
+              <tr>
+                <td>Encryption</td>
+                <td>256-bit AES Session</td>
+              </tr>
+            </table>
+            <div style="font-weight:500; font-size:0.9rem; color:var(--text-muted); margin-top:1rem; display:flex; align-items:center; gap:0.5rem;">
+              <svg width="16" height="16" fill="none" stroke="var(--primary-blue)" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Automated Failover Enabled
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>QUICK NAVIGATION</h4>
+            <ul class="footer-links">
+              <li><a href="public-board.html"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg> Public Issue Board</a></li>
+              <li><a href="report-issue.html"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg> Report Urgent Issue</a></li>
+              <li><a href="triage-prioritization.html"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg> Triage Console</a></li>
+              <li><a href="#"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg> Campus SLA Guidelines</a></li>
+              <li><a href="#" style="color:var(--danger-red); border-top:1px solid rgba(0,0,0,0.05); padding-top:1rem;"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg> Incident Dispatch: Ext. 4400</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>SYSTEM &amp; DISPATCH META</h4>
+            <table class="footer-table" style="margin-bottom:2rem;">
+              <tr>
+                <td>Active Shift<br>Roster</td>
+                <td><span class="badge" style="background:#e0e7ff; color:#3730a3;">8 Technicians On<br>Duty</span></td>
+              </tr>
+              <tr>
+                <td>Radio<br>Channel</td>
+                <td>CH-04 Facilities<br>Primary</td>
+              </tr>
+              <tr>
+                <td>Engine<br>Release</td>
+                <td style="font-family: monospace; font-size:0.8rem;">v2.8.4-GA (Field<br>Mesh)</td>
+              </tr>
+            </table>
+            <div class="footer-auth-text">
+              Authorized operational personnel only. All access logged and audited.
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="big-footer-bottom">
+          <div>
+            &copy; 2026 FIXTRACK Civic Technologies Inc. Built for Campus Operations &amp;<br>Facility Reliability. All rights reserved.
+          </div>
+          <div class="big-footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Public Audit Log</a>
+            <a href="#">System Status</a>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
